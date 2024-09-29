@@ -10,6 +10,10 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.itext.kernel)
+    implementation(libs.itext.layout)
+    implementation(libs.itext.io)
+
     testImplementation(kotlin("test"))
 }
 
