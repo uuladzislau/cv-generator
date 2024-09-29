@@ -14,6 +14,10 @@ dependencies {
     implementation(libs.itext.layout)
     implementation(libs.itext.io)
 
+    // Add 'simple' implementation to avoid warnings in console saying
+    // failed to load class 'org.slf4j.impl.StaticLoggerBinder'
+    implementation(libs.slf4j.simple)
+
     testImplementation(kotlin("test"))
 }
 
